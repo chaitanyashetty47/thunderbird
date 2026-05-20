@@ -36,9 +36,12 @@ export function TransportBanner() {
             <br />
             in Complete Comfort.
           </h2>
-          <p className="max-w-lg text-pretty text-sm font-light leading-relaxed text-white/85 md:text-base">
-            From airport arrivals and coastal drives to executive travel and private tours —
-            every journey is personally coordinated with hospitality-led care.
+          <p className="max-w-lg text-pretty text-sm font-light leading-relaxed text-white/85 md:text-base lg:hidden">
+            Every journey is personally coordinated with hospitality-led care.
+          </p>
+          <p className="hidden max-w-lg text-pretty text-sm font-light leading-relaxed text-white/85 md:text-base lg:block">
+            From airport arrivals and coastal drives to executive travel and private tours, every
+            journey is personally coordinated with hospitality-led care.
           </p>
           <Button
             variant="secondary"

@@ -13,7 +13,10 @@ export function Founder() {
                 Founder & Director
               </span>
               <h2 className="font-heading mb-10 text-3xl leading-[1.1] md:text-4xl">
-                A Boutique Practice, Built on
+                A Boutique Practice,
+                <br className="lg:hidden" />
+                <span className="hidden lg:inline"> Built&nbsp;on</span>
+                <span className="lg:hidden">Built&nbsp;on</span>
                 <br />
                 Two Decades of Five-Star Experience.
               </h2>

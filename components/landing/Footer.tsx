@@ -41,6 +41,7 @@ export function Footer() {
                     <Link
                       key={item.href}
                       href={item.href}
+                      scroll={item.href.startsWith("/")}
                       className="text-sm font-medium text-secondary/60 transition-colors hover:text-secondary"
                     >
                       {item.label}

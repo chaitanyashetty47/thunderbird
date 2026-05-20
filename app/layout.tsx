@@ -1,4 +1,5 @@
 import "./globals.css"
+import { ScrollToTopOnNavigate } from "@/components/scroll-to-top"
 import { ThemeProvider } from "@/components/theme-provider"
 import { fontHeading, fontParisienne, fontSans } from "@/lib/fonts"
 
@@ -14,7 +15,10 @@ export default function RootLayout({
       className={`light ${fontHeading.variable} ${fontSans.variable} ${fontParisienne.variable} font-sans antialiased`}
     >
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <ScrollToTopOnNavigate />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
