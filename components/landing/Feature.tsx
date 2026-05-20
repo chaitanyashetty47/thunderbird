@@ -27,13 +27,13 @@ export function Feature() {
 
       <div className="relative z-10 mx-auto flex min-h-[70vh] w-full max-w-7xl items-center px-6 lg:px-12">
         <div className="flex w-full max-w-2xl min-w-0 flex-col gap-6 md:gap-8 lg:max-w-3xl lg:gap-10">
-          <h2 className="font-heading text-2xl leading-[1.1] tracking-[-0.02em] md:text-4xl lg:text-[2.5rem]">
+          <h2 className="font-heading text-2xl leading-[1.1] tracking-[-0.02em] text-white md:text-4xl lg:text-[2.5rem]">
             Thoughtfully Managed
             <br />
             Experiences Across{" "}
             <span className="text-secondary">Cape&nbsp;Town.</span>
           </h2>
-          <p className="max-w-none text-pretty text-xs font-light leading-relaxed text-primary-foreground/85 sm:text-sm md:text-base">
+          <p className="max-w-none text-pretty text-xs font-light leading-relaxed text-white/85 sm:text-sm md:text-base">
             From private residences to guest arrivals and chauffeur-driven journeys,
             <br />
             we provide hospitality-led support grounded in attentiveness and trust.

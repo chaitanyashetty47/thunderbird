@@ -31,12 +31,12 @@ export function TransportBanner() {
           variant="fade-up"
           className="flex w-full max-w-2xl min-w-0 flex-col items-center gap-6 md:gap-8 lg:gap-10"
         >
-          <h2 className="font-heading text-3xl leading-[1.1] tracking-[-0.02em] md:text-4xl lg:text-5xl">
+          <h2 className="font-heading text-3xl leading-[1.1] tracking-[-0.02em] text-white md:text-4xl lg:text-5xl">
             Experience Cape Town
             <br />
             in Complete Comfort.
           </h2>
-          <p className="max-w-lg text-pretty text-sm font-light leading-relaxed text-primary-foreground/85 md:text-base">
+          <p className="max-w-lg text-pretty text-sm font-light leading-relaxed text-white/85 md:text-base">
             From airport arrivals and coastal drives to executive travel and private tours —
             every journey is personally coordinated with hospitality-led care.
           </p>

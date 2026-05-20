@@ -11,7 +11,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${fontHeading.variable} ${fontSans.variable} ${fontParisienne.variable} font-sans antialiased`}
+      className={`light ${fontHeading.variable} ${fontSans.variable} ${fontParisienne.variable} font-sans antialiased`}
     >
       <body>
         <ThemeProvider>{children}</ThemeProvider>
