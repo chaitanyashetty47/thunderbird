@@ -146,6 +146,11 @@
     transform: translateY(0);
     transition-delay: 140ms;
   }
+  .reveal-group.is-visible > .reveal-stagger:nth-child(4) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 210ms;
+  }
 
   .hero-enter {
     opacity: 0;
