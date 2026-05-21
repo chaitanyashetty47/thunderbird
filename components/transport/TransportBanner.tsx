@@ -1,7 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-
+import { ContactLink } from "@/components/contact-link";
 import { ScrollReveal } from "@/components/motion/scroll-reveal";
 import { Button } from "@/components/ui/button";
 
@@ -32,7 +31,7 @@ export function TransportBanner() {
           className="flex w-full max-w-2xl min-w-0 flex-col items-center gap-6 md:gap-8 lg:gap-10"
         >
           <h2 className="font-heading text-3xl leading-[1.1] tracking-[-0.02em] text-white md:text-4xl lg:text-5xl">
-            Experience Cape Town
+            Experience <span className="text-secondary">Cape Town</span>
             <br />
             in Complete Comfort.
           </h2>
@@ -47,7 +46,7 @@ export function TransportBanner() {
             variant="secondary"
             size="cta"
             nativeButton={false}
-            render={<Link href="#contact" />}
+            render={<ContactLink />}
             className="w-full max-w-xs hover:bg-primary/90 sm:w-auto"
           >
             Arrange Transport

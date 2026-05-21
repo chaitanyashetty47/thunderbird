@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { ContactLink } from "@/components/contact-link";
 import { Button } from "@/components/ui/button";
 import { fontParisienne } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
@@ -43,7 +44,7 @@ export function Hero() {
                 "hero-script block text-[3.375rem] normal-case leading-none tracking-normal text-primary md:text-[4.125rem] lg:text-[5.25rem]",
               )}
             >
-              Exquisitely.
+              Exquisitely
             </span>
           </h1>
 
@@ -66,12 +67,11 @@ export function Hero() {
               <ArrowRight size={14} className="text-secondary/60" />
             </Button>
             
-            <Link 
-              href="#contact" 
-              className="text-[0.7rem] md:text-xs tracking-[0.2em] text-secondary hover:text-secondary/80 transition-colors flex items-center relative group py-2"
-            >
-              <span className="border-b border-secondary/40 pb-1 group-hover:border-secondary transition-colors">REACH OUT TO JOHN</span>
-            </Link>
+            <ContactLink className="relative flex items-center py-2 text-[0.7rem] tracking-[0.2em] text-secondary transition-colors hover:text-secondary/80 md:text-xs group">
+              <span className="border-b border-secondary/40 pb-1 transition-colors group-hover:border-secondary">
+                REACH OUT TO JOHN
+              </span>
+            </ContactLink>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
+import { ContactLink } from "@/components/contact-link";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -10,9 +11,9 @@ const enquireButtonClass =
   "border-transparent bg-secondary font-semibold text-primary hover:bg-secondary/90 hover:text-primary";
 
 const navLinks = [
-  { href: "#accommodation", label: "ACCOMMODATION" },
-  { href: "/transport", label: "TRANSFERS" },
-  { href: "#real-estate", label: "REAL ESTATE SERVICES" },
+  { href: "#property-oversight", label: "PROPERTY OVERSIGHT" },
+  { href: "#hospitality-services", label: "HOSPITALITY SERVICES" },
+  { href: "/transport", label: "LUXURY TRANSPORT" },
   { href: "#about", label: "ABOUT" },
 ] as const;
 
@@ -56,6 +57,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
+              scroll={item.href.startsWith("/")}
               className="transition-colors hover:text-white/70"
             >
               {item.label}
@@ -68,7 +70,7 @@ export function Header() {
             variant="default"
             size="cta"
             nativeButton={false}
-            render={<Link href="#enquire" />}
+            render={<ContactLink />}
             className={enquireButtonClass}
           >
             ENQUIRE
@@ -94,6 +96,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
+              scroll={item.href.startsWith("/")}
               className="text-sm tracking-widest transition-colors hover:text-primary-foreground/70"
               onClick={() => setIsOpen(false)}
             >
@@ -104,7 +107,7 @@ export function Header() {
             variant="default"
             size="cta"
             nativeButton={false}
-            render={<Link href="#enquire" onClick={() => setIsOpen(false)} />}
+            render={<ContactLink onClick={() => setIsOpen(false)} />}
             className={enquireButtonClass}
           >
             ENQUIRE

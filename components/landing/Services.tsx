@@ -16,7 +16,7 @@ const services = [
   },
   {
     number: "02",
-    title: "Hospitality & Guest Coordination",
+    title: "Hospitality & Guest Care",
     description:
       "Five-star arrival experiences for your guests, without the five-star overhead. Personal, attentive, seamless.",
     image: "/guest.png",
@@ -50,7 +50,7 @@ function ServiceCard({
         aria-hidden
       />
       <div className="relative z-10 flex h-full flex-col p-5 md:p-6">
-        <span className="text-xs font-medium tracking-widest text-secondary">{number}</span>
+        <span className="text-md font-medium tracking-widest text-secondary">{number}</span>
         <div className="mt-auto">
           <h3 className="font-heading mb-2.5 text-xl leading-tight text-primary-foreground md:text-[1.32rem]">
             {title}

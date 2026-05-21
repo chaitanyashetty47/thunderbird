@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { ContactLink } from "@/components/contact-link";
 import { Button } from "@/components/ui/button";
 
 export function TransportHero() {
@@ -44,7 +45,7 @@ export function TransportHero() {
               variant="secondary"
               size="cta"
               nativeButton={false}
-              render={<Link href="#contact" />}
+              render={<ContactLink />}
               className="gap-3 text-secondary hover:text-secondary/90"
             >
               Arrange Transport

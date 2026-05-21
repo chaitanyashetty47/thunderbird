@@ -1,7 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-
+import { ContactLink } from "@/components/contact-link";
 import { Button } from "@/components/ui/button";
 
 export function Feature() {
@@ -42,7 +41,7 @@ export function Feature() {
             variant="default"
             size="cta"
             nativeButton={false}
-            render={<Link href="#contact" />}
+            render={<ContactLink />}
             className="w-full max-w-xs bg-secondary text-secondary-foreground hover:bg-secondary/90 sm:w-auto"
           >
             Contact John

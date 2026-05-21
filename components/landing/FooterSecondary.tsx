@@ -13,7 +13,7 @@ const footerLinks = [
 /** Sand background + navy text — preserved variation for reuse outside the landing page. */
 export function FooterSecondary() {
   return (
-    <footer className="w-full bg-secondary text-primary">
+    <footer id="contact" className="w-full scroll-mt-24 bg-secondary text-primary">
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-12">
         <div className="border-t border-primary/15 py-14 md:py-16 lg:py-20">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-10 lg:gap-16">
